@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: transparent;
+!important;
+}
+
+.background {
+    background-image: url("../assets/images/victor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 670px;
+}
+
+.navbar-brand {
+    font-family: morenabold, Serif;
+}
+
+a {
+    color: #f96d15;
+}
+
+.w3-wide {
+    background-color: white;
+}
+
+.ma-skills {
+    color: rgb(238, 238, 238);
+}
+
+#particles-js {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: inherit;
+    position: relative;
+}
+
+.lines {
+    display: flex;
+}
+
+.content {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-content {
+    position: relative;
+    top: 60px;
+    left: -40px;
+}
+
+.home-text {
+    font-size: 35px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.home-text-large {
+    font-size: 80px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.left {
+    position: relative;
+}
+
+#big-line {
+    height: 280px;
+    width: 3px;
+    background-color: #f96d15;
+    position: relative;
+}
+
+#small-line {
+    position: relative;
+    top: 40px;
+    height: 180px;
+    width: 2px;
+    margin-left: 20px;
+    background-color: #bb1542;
+}
+
+
+#e {
+    color: #ffffff;
+}
+
+#o {
+    color: #f96d15;
+}
+
+#me {
+    color: #bb1542;
+}
+
+#dev {
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'morenaregular', serif;
+    color: #00bd56;
+}
+
+.angle-b {
+    color: #f96d15;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'morenaextralight', serif;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    font-size: 70px;
+    margin: 20px;
+}
+
+.contact {
+    color: #000;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin-top: 100px;
+}
+
+.contacts {
+    background-image: url("../assets/images/backgrounds/contacts.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.myskills{
+    height: 460px;
+}
+
+.contact-overlay {
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+input[type="email"] {
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: .7em .6em;
+    height: 45px;
+    border-radius: 20px;
+    outline: none !important;
+    font-size: 14px;
+}
+
+
+/******** Media Queries ******/
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .background {
+        height: 640px;
+    }
+
+    .vick {
+        text-align: center;
+    }
+
+    .left, .lines {
+        display: block;
+    }
+
+    .lines {
+        display: grid;
+        place-items: center;
+        padding-top: -50px;
+    }
+
+    .home-content {
+        margin-left: 30%;
+    }
+
+    .content {
+        display: block;
+    }
+
+    #big-line {
+        height: 2px;
+        width: 250px;
+        background-color: #f96d15;
+    }
+
+    #small-line {
+        margin-top: -40px;
+        height: 2px;
+        width: 170px;
+        background-color: #bb1542;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+    }
+
+    i {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .myskills{
+        height: 60px;
+    }
+
+
+}
