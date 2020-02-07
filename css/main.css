@@ -3,42 +3,40 @@
 html {
     margin: 0;
     padding: 0;
+    background-color: #0a192f;
     scroll-behavior: smooth;
 }
 
-.navbar {
-    background: transparent;
-!important;
+/* Navigation bar*/
+.navbar{
+    background: rgba(10, 25, 47, 8);
+}
+a{
+    padding: 0 4px 0 4px;   
 }
 
+/* Landing page */
 .background {
     background-image: url("../assets/images/victor.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 670px;
+    height: 99.8vh;
 }
 
-.navbar-brand {
-    font-family: morenabold, Serif;
-}
 
 a {
     color: #f96d15;
 }
 
 .w3-wide {
-    background-color: white;
+    background-color: #8892b0;
 }
 
-.ma-skills {
-    color: rgb(238, 238, 238);
-}
 
-#particles-js {
-    background-color: rgba(0, 0, 0, 0.7);
+#particles{
+    background-color: rgba(10, 25, 47, 0.8);
     height: inherit;
-    position: relative;
 }
 
 .lines {
@@ -84,10 +82,9 @@ a {
     top: 40px;
     height: 180px;
     width: 2px;
-    margin-left: 20px;
+    margin-left: 10px;
     background-color: #bb1542;
 }
-
 
 #e {
     color: #ffffff;
@@ -115,49 +112,72 @@ a {
     font-family: 'morenaextralight', serif;
 }
 
-.skills {
-    display: flex;
-    justify-content: center;
-}
-
-i {
-    font-size: 70px;
-    margin: 20px;
-}
-
-.contact {
-    color: #000;
-    font-family: 'Love Ya Like A Sister', cursive;
-    margin-top: 100px;
-}
-
-.contacts {
-    background-image: url("../assets/images/backgrounds/contacts.jpg");
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    margin: 0;
+/* About page */
+#about{
+    margin-top: 0;
     padding: 0;
-}
-.myskills{
-    height: 460px;
-}
-
-.contact-overlay {
-    height: inherit;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #0a192f;
+    color: #8892b0;
+    display: flex;
+    justify-content: space-around;
 }
 
-input[type="email"] {
-    background: transparent;
-    border: 1px solid #ffffff;
-    padding: .7em .6em;
-    height: 45px;
-    border-radius: 20px;
-    outline: none !important;
-    font-size: 14px;
+.about-header{
+    font-size: 35px;
+    font-family: 'morenabold';
 }
+.about-text{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Projects Page*/
 
+.line-divider{
+    height: 200px;
+    width: 10px;
+    background-color: #f96d15;
+}
+/* Skills Page */
+.skills-header {
+    font-size: 35px;
+    font-family: 'morenabold';
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+i{
+    font-size: 40px;
+    padding: 10px;
+}
+.devicon-python-plain{
+    color: purple;
+}
+/* Metrics page */
+
+/* Contacts page */
+#contact{
+    padding: 0;
+    margin: 30px 0 0 0;
+    margin-top: -50px;
+    background-color: #0a192f;
+}
+.contacts-header{
+    font-size: 35px;
+    color: #8892b0;
+    font-family: 'morenabold';
+}
+i{
+    font-size: 25px;
+}
+.fa-facebook{
+    color: blue;
+}
+.footer-copyright{
+ color: #8892b0;
+ font-family: 'Courier New', Courier, monospace;
+}
 
 /******** Media Queries ******/
 
@@ -215,7 +235,8 @@ input[type="email"] {
 
 @media (min-width: 320px) and (max-width: 480px) {
     .background {
-        height: 640px;
+        height: 110vh;
+        margin-top: -60px;
     }
 
     .vick {
@@ -247,24 +268,40 @@ input[type="email"] {
     }
 
     #small-line {
+        margin-left: 110px;
         margin-top: -40px;
         height: 2px;
         width: 170px;
         background-color: #bb1542;
     }
 
-    .skills {
-        display: flex;
-        justify-content: center;
+    /* About section small */
+    #about{
+    margin-top: 0;
+    padding: 0;
+    background-color: #0a192f;
+    display: block;
+    justify-content: space-between;
     }
+    .about-desc{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+.skills{
+    display: block;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+i{
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+    
+/*Projects Section*/
 
-    i {
-        font-size: 25px;
-        margin: 10px;
-    }
-    .myskills{
-        height: 60px;
-    }
+
+/* Skills Page */
 
 
 }
