@@ -179,6 +179,10 @@ i{
  font-family: 'Courier New', Courier, monospace;
 }
 
+figcaption{
+   font-family: 'Courier New', Courier, monospace;
+}
+
 /******** Media Queries ******/
 
 /*
