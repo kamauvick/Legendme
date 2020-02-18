@@ -113,6 +113,10 @@ a {
 }
 
 /* About page */
+
+.whoami{
+    color: #f96d15;
+}
 #about{
     margin-top: 0;
     padding: 0;
@@ -127,7 +131,7 @@ a {
     font-family: 'morenabold';
 }
 .about-text{
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 }
 /* Projects Page*/
