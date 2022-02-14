@@ -6,3 +6,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Kamauvick/StrapDown.js/network/)
 
 A cool revamp of my portfolio
+
+
+__ --Just updated-- __
