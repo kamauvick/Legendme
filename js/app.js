@@ -11,12 +11,12 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+particlesJS('particles',
 
     {
         "particles": {
             "number": {
-                "value": 20,
+                "value": 10,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -41,7 +41,7 @@ particlesJS('particles-js',
                 }
             },
             "opacity": {
-                "value": 0.3,
+                "value": 0.2,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -51,7 +51,7 @@ particlesJS('particles-js',
                 }
             },
             "size": {
-                "value": 5,
+                "value": 3,
                 "random": true,
                 "anim": {
                     "enable": false,
@@ -62,14 +62,14 @@ particlesJS('particles-js',
             },
             "line_linked": {
                 "enable": true,
-                "distance": 150,
+                "distance": 130,
                 "color": "#ffffff",
-                "opacity": 0.4,
+                "opacity": 0.15,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 2,
+                "speed": 1,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -112,7 +112,7 @@ particlesJS('particles-js',
                     "distance": 200
                 },
                 "push": {
-                    "particles_nb": 4
+                    "particles_nb": 1
                 },
                 "remove": {
                     "particles_nb": 2

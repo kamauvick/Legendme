@@ -55,3 +55,19 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+// Navbar: solid background once the page scrolls; footer year
+(function() {
+    var nav = document.getElementById('nav');
+    if (nav) {
+        var update = function() {
+            nav.classList.toggle('is-scrolled', window.scrollY > 40);
+        };
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+    }
+
+    var year = document.getElementById('year');
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+})();

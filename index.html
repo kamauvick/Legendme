@@ -3,249 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="portfolio, victor, waichigo, kamauvick, shiggz, django, vick, victor waichigo, victor kamau">
-    <title>Kamauvick</title>
-    <!-- Font Awesome -->
+    <meta name="description" content="Victor Waichigo, QA engineer. 5+ years of manual and automated testing: Playwright, API and performance testing, test reporting.">
+    <meta name="keywords" content="portfolio, victor waichigo, kamauvick, qa engineer, sdet, test automation, playwright, k6, testrix">
+    <title>Victor Waichigo · QA Engineer</title>
+    <!-- Font Awesome (contact icons) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Dev icons (toolkit) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
-    <!--Dev icons -->
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
     <link href="assets/font/stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=4" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!--Navbar -->
+    <a class="skip-link" href="#about">Skip to content</a>
 
-    <!--End Navbar -->
+    <!-- Navbar -->
+    <header class="nav" id="nav">
+        <a class="nav-brand" href="#top">vick<span class="accent">.</span></a>
+        <nav aria-label="Sections">
+            <ul class="nav-links">
+                <li><a href="#about"><span class="num">01.</span>About</a></li>
+                <li><a href="#toolkit"><span class="num">02.</span>Toolkit</a></li>
+                <li><a href="#work"><span class="num">03.</span>Work</a></li>
+                <li><a href="#experience"><span class="num">04.</span>Experience</a></li>
+                <li><a href="#contact"><span class="num">05.</span>Contact</a></li>
+            </ul>
+        </nav>
+        <a class="nav-cv" href="assets/docs/VictorWaichigoResume.pdf" target="_blank" rel="noopener">CV</a>
+    </header>
+    <!-- End Navbar -->
 
-    <!--Landing page -->
-    <div class="background">
-        <div id="particles">
-            <div class="overlay">
-                <div class="content">
-                    <div class="lines">
-                        <hr id="big-line">
-                        <hr id="small-line">
-                    </div>
-                    <div class="home-content">
-                        <h1 class="text-center text-white  home-text-large" id="hello">H<span id="e">e</span>ll<span
-                                id="e" color="#f96d15;">o</span>,
-                        </h1>
-                        <h2 class="text-center text-white home-text" id="iam">I'm <span id="o">Vick</span>, and i'm a
-                        </h2>
-                        <h2 class="text-center text-white home-text"><span class="angle-b">&lt; </span>
-                            <span id="dev" class="txt-rotate" data-period="2000"
-                                data-rotate='[ "QA Engineer.", "Learner.", "Farmer.", "Car Fundi." ]'> </span>
-                            <span class="angle-b"> &gt;</span></h2>
+    <main>
+        <!-- Landing page -->
+        <div class="background" id="top">
+            <div id="particles">
+                <div class="overlay">
+                    <div class="content">
+                        <div class="lines" aria-hidden="true">
+                            <hr id="big-line">
+                            <hr id="small-line">
+                        </div>
+                        <div class="home-content">
+                            <h1 class="home-text-large">H<span class="e">e</span>ll<span class="accent">o</span>,</h1>
+                            <p class="home-text">I'm <span id="o">Vick</span>, and i'm a</p>
+                            <p class="home-text">
+                                <span class="angle-b" aria-hidden="true">&lt; </span>
+                                <a href="#about" class="role-link" title="Get to know me">
+                                    <span class="sr-only">QA Engineer, Automation Engineer, Mentor, Farmer and Fundi</span>
+                                    <span id="dev" class="txt-rotate" data-period="2000" aria-hidden="true"
+                                        data-rotate='[ "QA Engineer.", "Automation Engineer.", "Mentor.", "Farmer.", "Fundi." ]'> </span>
+                                </a>
+                                <span class="angle-b" aria-hidden="true"> &gt;</span>
+                            </p>
+                            <p class="tagline">5+ years breaking software on purpose, so users don't break it by accident.</p>
+                            <div class="hero-actions">
+                                <a class="btn btn-primary" href="#work">See my work</a>
+                                <a class="btn btn-ghost" href="assets/docs/VictorWaichigoResume.pdf" target="_blank" rel="noopener">Download CV</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- End Landing page -->
+        <!-- End Landing page -->
 
-    <!-- About-->
-    <section id="about">
-
-        <div class="about-content ml-4">
-            <h3 class="pt-5 pb-4 about-header text-center">About Me</h3>
-            <div id="about-desc" class="">
-                <p class="about-text pb-5 pt-3 mx-2">
-                    I am a <span class="whoami"><u>QA Automation engineer at Workpay</u></span>   and a <span class="whoami"><u> volunteer at Red(P) org</u></span>. <br>
-                    I love figuring out the building blocks of things
-                    and <br> rearranging them to make something even better.<br><br>
-                    I am very interested in the intersection of code, science <br> and tech.<br>
-                    When not writing code, i enjoy reading books, hiking, driving and <br> riding bikes.
+        <!-- About -->
+        <section id="about" class="section">
+            <h2 class="section-title"><span class="num">01.</span>About me</h2>
+            <div class="about">
+                <p>
+                    I'm a QA engineer with 5+ years of manual and automated testing across HR, fintech and
+                    supply-chain startups, currently at <span class="accent">Dealstack</span>.
+                </p>
+                <p>
+                    I <span class="hl">build test frameworks</span> with Playwright, load-test with k6, and make sure
+                    test results reach the whole team. I also enjoy <span class="hl">mentoring</span>.
+                </p>
+                <p>
+                    Off the clock, I <span class="hl">farm</span>, <span class="hl">fix cars</span>, volunteer at
+                    <span class="hl">RED-p Kenya</span>, and hike or ride whenever I can.
                 </p>
             </div>
-        </div>
-        <div id="line-divider"></div>
-        <!-- <div class="skills mr-4"> -->
-        <div class="skill-details">
-            <h3 class="skills-header text-center pt-5 pb-4">Skills</h3>
-            <div class="container">
-                <div>
-                    <ul class="list-unstyled list-inline text-center">
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-                                <figure>
-                                    <i class="devicon-k6-original colored"></i>
-                                    <figcaption class="text-center">K6</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-                
-                                <figure>
-                                    <i class="devicon-playwright-plain colored"></i>
-                                    <figcaption class="text-center">Playwright</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-                
-                                <figure>
-                                    <i class="devicon-git-plain colored"></i>
-                                    <figcaption class="text-center">Git</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-                
-                                <figure>
-                                    <i class="devicon-postman-plain colored"></i>
-                                    <figcaption class="text-center">Postman</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                
-                
-                    </ul>
+        </section>
+        <!-- End About -->
+
+        <!-- Toolkit -->
+        <section id="toolkit" class="section">
+            <h2 class="section-title"><span class="num">02.</span>Toolkit</h2>
+            <dl class="toolkit">
+                <div class="toolkit-row">
+                    <dt>UI &amp; mobile</dt>
+                    <dd>
+                        <span class="chip"><i class="devicon-playwright-plain" aria-hidden="true"></i>Playwright</span>
+                        <span class="chip"><i class="devicon-cypressio-plain" aria-hidden="true"></i>Cypress</span>
+                        <span class="chip"><i class="devicon-selenium-original" aria-hidden="true"></i>Selenium</span>
+                        <span class="chip">Appium</span>
+                    </dd>
                 </div>
-                <div>
-                    <ul class="list-unstyled list-inline text-center">
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-
-                                <figure>
-                                    <i class="devicon-javascript-plain colored"></i>
-                                    <figcaption class="text-center">JavaScript</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-
-                                <figure>
-                                    <i class="devicon-java-plain colored"></i>
-                                    <figcaption class="text-center">Java</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-
-                                <figure>
-                                    <i class="devicon-python-plain colored"></i>
-                                    <figcaption class="text-center">Python</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="mx-2">
-                                <figure>
-                                    <i class="devicon-postgresql-plain colored"></i>
-                                    <figcaption class="text-center">Postgres</figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="toolkit-row">
+                    <dt>API</dt>
+                    <dd>
+                        <span class="chip"><i class="devicon-playwright-plain" aria-hidden="true"></i>Playwright</span>
+                        <span class="chip"><i class="devicon-postman-plain" aria-hidden="true"></i>Postman</span>
+                    </dd>
                 </div>
+                <div class="toolkit-row">
+                    <dt>Performance</dt>
+                    <dd>
+                        <span class="chip"><i class="devicon-k6-plain" aria-hidden="true"></i>k6</span>
+                    </dd>
+                </div>
+                <div class="toolkit-row">
+                    <dt>Languages</dt>
+                    <dd>
+                        <span class="chip"><i class="devicon-javascript-plain" aria-hidden="true"></i>JavaScript</span>
+                        <span class="chip"><i class="devicon-java-plain" aria-hidden="true"></i>Java</span>
+                        <span class="chip"><i class="devicon-python-plain" aria-hidden="true"></i>Python</span>
+                    </dd>
+                </div>
+                <div class="toolkit-row">
+                    <dt>Test management</dt>
+                    <dd>
+                        <span class="chip">AIO</span>
+                        <span class="chip">Qase</span>
+                        <span class="chip">TestRail</span>
+                        <span class="chip"><i class="devicon-jira-plain" aria-hidden="true"></i>Jira</span>
+                    </dd>
+                </div>
+                <div class="toolkit-row">
+                    <dt>Platform &amp; reporting</dt>
+                    <dd>
+                        <span class="chip"><i class="devicon-git-plain" aria-hidden="true"></i>Git</span>
+                        <span class="chip"><i class="devicon-docker-plain" aria-hidden="true"></i>Docker</span>
+                        <span class="chip">CI/CD</span>
+                        <span class="chip"><i class="devicon-grafana-plain" aria-hidden="true"></i>Grafana</span>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+        <!-- End Toolkit -->
+
+        <!-- Work -->
+        <section id="work" class="section">
+            <h2 class="section-title"><span class="num">03.</span>Work</h2>
+            <div class="cards">
+                <article class="card">
+                    <p class="card-kicker">open source · npm</p>
+                    <h3 class="card-title">Testrix CLI</h3>
+                    <p class="card-text">
+                        Every framework writes its own report format, so results end up scattered.
+                        Testrix parses 12 of them (JUnit, Playwright, Cypress, TestNG, k6, JMeter, Excel and more)
+                        and publishes one consistent result to a dashboard API from any CI.
+                    </p>
+                    <p class="card-result"><span class="tick">✓</span> Near-zero config: branch, commit and reports auto-detected in GitHub Actions, GitLab, Jenkins, CircleCI and Bitbucket</p>
+                    <p class="card-links">
+                        <a href="https://www.npmjs.com/package/testrix-cli" target="_blank" rel="noopener"><i class="devicon-npm-plain" aria-hidden="true"></i>npm</a>
+                        <a href="https://github.com/kamauvick/Testrix" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <p class="card-kicker">backend · private repo</p>
+                    <h3 class="card-title">QA Testing Dashboard API</h3>
+                    <p class="card-text">
+                        The service Testrix publishes to. It stores every test run and serves the metrics behind the
+                        team's quality dashboards, so managers and engineers can judge platform stability at a glance.
+                    </p>
+                    <p class="card-result"><span class="tick">✓</span> Now a trusted tool for assessing platform stability</p>
+                </article>
+
+                <article class="card">
+                    <p class="card-kicker">case study · Workpay</p>
+                    <h3 class="card-title">UI automation framework</h3>
+                    <p class="card-text">
+                        The core HR product was being migrated and UI regressions had to be caught fast.
+                        I built a Playwright framework for it from scratch.
+                    </p>
+                    <p class="card-result"><span class="tick">✓</span> Cut the time to find UI issues by 50%</p>
+                </article>
+
+                <article class="card">
+                    <p class="card-kicker">case study · Workpay</p>
+                    <h3 class="card-title">API automation framework</h3>
+                    <p class="card-text">
+                        New loans, expense and wallet features depended on backend APIs being right before release.
+                        I built an API test framework with Playwright to catch backend bugs early.
+                    </p>
+                    <p class="card-result"><span class="tick">✓</span> Loans, expense and wallet features shipped on time</p>
+                </article>
             </div>
-        </div>
-        </div>
-        </div>
-    </section>
-    <!-- End About -->
+        </section>
+        <!-- End Work -->
 
-
-
-    <!-- Projects -->
-
-    <!-- End Projects -->
-
-    <!-- Skills -->
-
-    <!-- End Skills -->
-
-    <!-- Metrics -->
-
-    <!-- End mertics -->
-
-    <!-- Contacts -->
-    <section id="contact">
-        <div class="contact-details">
-            <h3 class="contacts-header text-center pt-5 pb-2 mt-5 mb-1">Contact Me</h3>
-            <div class="contacts">
-                <!-- Footer -->
-                <footer class="page-footer font-small  pt-4">
-
-                    <!-- Footer Elements -->
-                    <div class="container">
-
-                        <!-- Social buttons -->
-                        <ul class="list-unstyled list-inline text-center">
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-tw mx-1" href="https://twitter.com/kamau_vick"
-                                    target="_blank">
-                                    <i class="fab fa-twitter" style="color: #1da1f2;"> </i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-gmail mx-1" href="mailto:waichigovick@gmail.com" target="_blank">
-                                    <i class="fa fa-envelope" style="color: red;"> </i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/victor-waichigo/"
-                                    target="_blank">
-                                    <i class="fab fa-linkedin-in" style="color: #0077b5;"> </i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-dribbble mx-1" href="https://github.com/kamauvick"
-                                    target="_blank">
-                                    <i class="fab fa-github" style="color: black;"> </i>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- Social buttons -->
-
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <h2 class="section-title"><span class="num">04.</span>Experience</h2>
+            <ol class="timeline">
+                <li>
+                    <span class="when">2026 – now</span>
+                    <div>
+                        <h3>QA Engineer <span class="at">@ Dealstack</span></h3>
                     </div>
-                    <!-- Footer Elements -->
-
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3 mt-4">© 2025 Copyright:
-                        <a style="color: #f96d15;"> Victor Waichigo</a>
+                </li>
+                <li>
+                    <span class="when">2023 – 2026</span>
+                    <div>
+                        <h3>Senior QA Automation Engineer <span class="at">@ Workpay</span></h3>
+                        <p>Built the UI and API automation frameworks, test dashboards, and moved test management from Excel to AIO.</p>
                     </div>
-                    <!-- Copyright -->
+                </li>
+                <li>
+                    <span class="when">2021 – 2023</span>
+                    <div>
+                        <h3>Software Engineer in Test <span class="at">@ Kyosk Digital Services</span></h3>
+                        <p>Built a CodeceptJS framework, led testing of the ERPNext integration and the v2 platform, set up QA SOPs.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2020 – 2021</span>
+                    <div>
+                        <h3>Software Test Engineer <span class="at">@ Techno Brain Group</span></h3>
+                        <p>Microsoft Edge performance benchmarking, Windows 11 release testing, early Azure testing.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2020 – now</span>
+                    <div>
+                        <h3>Volunteer <span class="at">@ RED-p Kenya</span></h3>
+                        <p>School-fee payments and records for 200+ scholarship students.</p>
+                    </div>
+                </li>
+            </ol>
+            <p class="education">
+                <span class="label">Education</span>
+                BSc Information Technology, JKUAT · Diploma in Software Engineering, Moringa School
+            </p>
+        </section>
+        <!-- End Experience -->
 
-                </footer>
-                <!-- Footer -->
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End Contacts -->
+        <!-- Contacts -->
+        <section id="contact" class="section section-contact">
+            <h2 class="section-title"><span class="num">05.</span>Contact</h2>
+            <p class="lead">
+                Want to talk testing, automation or test reporting? My inbox is open.
+            </p>
+            <a class="btn btn-primary" href="mailto:waichigovick@gmail.com">Say hello</a>
+            <ul class="socials">
+                <li><a href="https://github.com/kamauvick" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/victor-waichigo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/kamau_vick" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:waichigovick@gmail.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+        </section>
+        <!-- End Contacts -->
+    </main>
 
+    <footer class="footer">
+        © <span id="year">2026</span> Victor Waichigo
+    </footer>
 
     <!--******* Scripts Section *******-->
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
     <script src="js/particles.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/main.js?v=4" type="text/javascript"></script>
 </body>
 
 </html>
